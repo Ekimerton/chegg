@@ -34,7 +34,6 @@ def get_page(url):
     # Handle request
     browser.get(url)
     element = browser.find_element_by_class_name('answer-given-body')
-# print(element.get_attribute('innerHTML'))
     print(element.text)
 
 logged_in = False
