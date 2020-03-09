@@ -44,9 +44,3 @@ wait = WebDriverWait(browser, 30)
 email = os.environ['chegg_username']
 password = os.environ['chegg_password']
 
-
-get_page("https://www.chegg.com/homework-help/questions-and-answers/undesired-polysubstitution-aromatic-nucleus-likely-encountered-case-friedel-crafts-alkylat-q17716765")
-
-print("------------------------------")
-
-get_page("https://www.chegg.com/homework-help/questions-and-answers/substituent-deactivates-benzene-ring-towards-electrophilic-substitution-directs-incoming-g-q6618475")

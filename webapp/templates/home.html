@@ -1,1 +1,22 @@
-<p> Welcome to chegg! </p>
+<h1> Enter the url of your chegg article! </h1>
+<form method="POST" action="">
+	{{ form.hidden_tag() }}
+	<fieldset class="form-group">
+		<div class="row">
+			<div class="form-group col">
+			{{ form.url.label(class="form-control-label")}}
+			{% if form.url.errors %}
+			{{ form.url(class="form-control form-control-lg is-invalid") }}
+			<div class="invalid-feedback">
+				{% for error in form.url.errors %}
+				<span>{{ error }}</span>
+				{% endfor %}
+			</div>
+			{% else %}
+				{{ form.url(class="form-control form-control-lg") }}
+			{% endif %}
+          </div>
+		  {{ form.submit(class="btn btn-dark mb-3 btn-block") }}
+		</div>
+	</fieldset>
+</form>
